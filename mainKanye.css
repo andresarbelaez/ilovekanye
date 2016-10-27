@@ -1,0 +1,78 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: center;
+}
+.jumbotron{
+    display: flex;
+    align-items: center;
+    background-color: #f79f79;
+   //background-image: url('bluegradient.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+a.button{
+    background-color: #ffffff;
+    color: #f79f79;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    border-radius: 50px;
+}
+a.startButton{
+    background-color: #ffffff;
+    color: #f79f79;
+    padding: 3px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+a.lyric{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+.row1{
+   /* -webkit-animation-delay: 1s; */
+}
+a.homeButton{
+  background-color: #ffffff;
+  color: #f79f79;
+  padding:3px;
+  display: inline-block;
+  border-radius: 50px;
+  font-size: 30px;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  padding: 20px;
+  box-shadow: 0 0 10px 10px #ccc;
+  z-index: 100;
+  width: 400px;
+  height: 400px;
+  left: 50%;
+  margin-left: -200px;
+  background: #000;
+  top: 50%;
+  margin-top: -200px; 
+  border-radius: 10px;
+  transition: all 0.5s ease-in;  
+}
+
+#footer {
+    font-size: 12px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: left;
+    margin-left: 20px;
+}
