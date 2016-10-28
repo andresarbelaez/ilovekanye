@@ -4,21 +4,13 @@ $(function(){
     $("a.youtube").on("click",function(e){
   var wrapper = $("#video-modal");
 	var href= $(this).attr("href");
-  var customFrame =  '<iframe src='+href+'  width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""> </iframe>';
+  var customFrame =  '<iframe src='+href+'  width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="player"> </iframe>';
   $(wrapper).append(customFrame).show();
 	e.preventDefault();
         $("a.closeVideoButton").on("click", function(){
             $(wrapper).append(customFrame).hide();
-            //customFrame.currentTime = 0;
-            //customFrame.pause();
-
-            //First get the  iframe URL
             //var url = wrapper.attr('src');
-
-            //Then assign the src to null, this then stops the video been playing
-            customFrame.attr('src', '');
-
-            // Finally you reasign the URL back to your iframe, so when you hide and load it again you still have the link
+            $(#player).attr('src', '');
             //wrapper.attr('src', url);
         });
     });
