@@ -9,7 +9,9 @@ $(function(){
 	e.preventDefault();
         $("a.closeVideoButton").on("click", function(){
             $(wrapper).append(customFrame).hide();
-            //customFrame.stopVideo();
+            customFrame.currentTime = 0;
+            customFrame.pause();
+            
             //First get the  iframe URL
             var url = customFrame.attr('src');
 
