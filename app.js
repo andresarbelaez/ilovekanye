@@ -9,17 +9,17 @@ $(function(){
 	e.preventDefault();
         $("a.closeVideoButton").on("click", function(){
             $(wrapper).append(customFrame).hide();
-            customFrame.currentTime = 0;
-            customFrame.pause();
-            
+            //customFrame.currentTime = 0;
+            //customFrame.pause();
+
             //First get the  iframe URL
-            var url = customFrame.attr('src');
+            var url = wrapper.attr('src');
 
             //Then assign the src to null, this then stops the video been playing
-            customFrame.attr('src', '');
+            wrapper.attr('src', '');
 
             // Finally you reasign the URL back to your iframe, so when you hide and load it again you still have the link
-            customFrame.attr('src', url);
+            wrapper.attr('src', url);
         });
     });
     //var main = function(){
