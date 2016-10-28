@@ -9,7 +9,7 @@ $(function(){
 	e.preventDefault();
         $("a.closeVideoButton").on("click", function(){
             $(wrapper).append(customFrame).hide();
-            customFrame.stopVideo();
+            //customFrame.stopVideo();
         });
     });
     var main = function(){
