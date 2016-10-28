@@ -10,7 +10,7 @@ $(function(){
         $("a.closeVideoButton").on("click", function(){
             $(wrapper).append(customFrame).hide();
             //var url = wrapper.attr('src');
-            $(#player).attr('src', '');
+            $("#player").attr('src', '');
             //wrapper.attr('src', url);
         });
     });
