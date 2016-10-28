@@ -3,15 +3,16 @@ $(function(){
     
     $("a.youtube").on("click",function(e){
   var wrapper = $("#video-modal");
-	var href= $(this).attr("href");
+	var href= $(this).attr("href") + "?enablejsapi=1";
   var customFrame =  '<iframe src='+href+'  width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="player"> </iframe>';
   $(wrapper).append(customFrame).show();
 	e.preventDefault();
         $("a.closeVideoButton").on("click", function(){
             $(wrapper).append(customFrame).hide();
             var url = $("#player").attr('src');
-            $("#player").attr('src', '');
-            $("#player").attr('src', url);
+            //$("#player").attr('src', '');
+            $("#player").stopVideo();
+            //$("#player").attr('src', url);
         });
     });
     //var main = function(){
