@@ -11,7 +11,7 @@ $(function(){
             $(wrapper).append(customFrame).hide();
         });
     });
-    var function = main(){
+    var main = function(){
         var animationName = "animated fadeInUp";
         var animationEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
         $(".row1").hide();
