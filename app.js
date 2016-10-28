@@ -16,7 +16,7 @@ $(function(){
             //var url = wrapper.attr('src');
 
             //Then assign the src to null, this then stops the video been playing
-            wrapper.attr('src', '');
+            customFrame.attr('src', '');
 
             // Finally you reasign the URL back to your iframe, so when you hide and load it again you still have the link
             //wrapper.attr('src', url);
