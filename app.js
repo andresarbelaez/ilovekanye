@@ -9,9 +9,9 @@ $(function(){
 	e.preventDefault();
         $("a.closeVideoButton").on("click", function(){
             $(wrapper).append(customFrame).hide();
-            //var url = wrapper.attr('src');
+            var url = $("#player").attr('src');
             $("#player").attr('src', '');
-            //wrapper.attr('src', url);
+            $("#player").attr('src', url);
         });
     });
     //var main = function(){
