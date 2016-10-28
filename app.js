@@ -12,7 +12,7 @@ $(function(){
             //customFrame.stopVideo();
         });
     });
-    var main = function(){
+    //var main = function(){
         var animationName = "animated fadeInUp";
         var animationEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
         $(".row1").hide();
@@ -39,7 +39,7 @@ $(function(){
         $("a.kanyeLoves").on("click", function(){
           $(".kiss").toggle(1000);
         }); 
-    } 
+    //} 
        
 });
 $(document).ready(main);
